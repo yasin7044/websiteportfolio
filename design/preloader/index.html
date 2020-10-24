@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="preloader">
+      <!-- Spinner 1 -->
+      <div class="spinner spinner-1"></div>
+
+      <!-- Spinner 2-->
+      <!-- <div class="spinner spinner-2">
+        <span></span><span></span><span></span>
+      </div> -->
+    </div>
+    <h1>just to check</h1>
+    <img src="https://via.placeholder.com/1920/1080" alt="just an img">
+
+
+    
+    <!-- JS for loader to fade away -->
+    <script>
+      window.addEventListener("load", () => {
+        //triggers after load complete
+        setTimeout(() => {
+          var preloader = document.getElementById("preloader");
+          preloader.classList.add("preloaderFadeOut");
+        }, 2000)
+      });
+    </script>
+  </body>
+</html>

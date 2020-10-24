@@ -1,0 +1,13 @@
+Fonts used in this design:
+
+Font: Alex Brush
+Author: TypeSETit
+Url: http://www.fontsquirrel.com/fonts/alex-brush
+
+Font: Bitter
+Author: Sol Matas
+Url: http://www.fontsquirrel.com/fonts/bitter
+
+Font: Nexa Rust
+Author: Fontfabric
+Url: http://www.fontsquirrel.com/fonts/nexa-rust

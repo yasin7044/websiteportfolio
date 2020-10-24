@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--  Bootstrap CSS  -->
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Design Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/css/flag-icon.min.css"
+    />
+
+    <!--  Flipster  -->
+    <link rel="stylesheet" href="css/jquery.flipster.css" />
+
+    <!--  Main CSS  -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Single Product</title>
+  </head>
+  <body>
+    <!-- Notification Bar -->
+    <div class="top-bar">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <font style="vertical-align: inherit;"
+                ><font style="vertical-align: inherit;"
+                  >Free shipping on orders over &#8377;500
+                </font></font
+              >
+            </li>
+            <li class="list-inline-item">
+              <div class="dropdown">
+                <a
+                  id="langsDropdown"
+                  href="#"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  class="dropdown-toggle"
+                  ><span class="flag-icon flag-icon-in"></span>
+                  <font style="vertical-align: inherit;"
+                    ><font style="vertical-align: inherit;">IND</font></font
+                  ></a
+                >
+                <div
+                  aria-labelledby="langsDropdown"
+                  class="dropdown-menu"
+                  x-placement="bottom-start"
+                  style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(25px, 21px, 0px);"
+                >
+                  <a href="#" class="dropdown-item"
+                    ><span class="flag-icon flag-icon-us"></span>
+                    <font style="vertical-align: inherit;"
+                      ><font style="vertical-align: inherit;">USA</font></font
+                    ></a
+                  ><a href="#" class="dropdown-item">
+                    <span class="flag-icon flag-icon-gb"></span>
+                    <font style="vertical-align: inherit;">UK</font></a
+                  >
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo-small.png" alt="Logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#products">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#variety">Variety</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gifts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="career.html">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">B2B</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="offline-stores.html">Offline Store</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">Contact</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav nav-icons">
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">
+              <span data-notif="3" class="fa fa-shopping-cart"></span> Cart
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">
+              <span class="fa fa-user"></span> Log In
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="fa fa-power-off"></span> Log Out
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Cart</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Checkout
+          </li>
+        </ol>
+      </nav>
+    </div>
+
+    <!--Main layout-->
+    <div class="container wow fadeIn">
+      <!-- Heading -->
+      <p class="h5">
+        <span class="visually-hidden"
+          >How does the logged in chekout look?</span
+        >
+        <a class="link" href="checkout-logged-in.html">Click here</a>
+      </p>
+
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-md-8 mb-4">
+          <form action="" id="newUserPayment">
+            <!--Card-->
+            <div class="card">
+              <!--Card content-->
+              <div class="card-body">
+                <!--Grid row-->
+                <div class="row">
+                  <!--Grid column-->
+                  <div class="col-md-6 form-group">
+                    <!--firstName-->
+                    <label for="firstName" class="">First name</label>
+                    <input
+                      type="text"
+                      id="firstName"
+                      class="form-control"
+                      placeholder="John"
+                      required
+                    />
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-6 form-group">
+                    <!--lastName-->
+                    <label for="lastName" class="">Last name</label>
+                    <input
+                      type="text"
+                      id="lastName"
+                      class="form-control"
+                      placeholder="Doe"
+                      required
+                    />
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+
+                <div class="row">
+                  <!--email-->
+                  <div class="col-md-6 form-group">
+                    <label for="email" class="">Email</label>
+                    <input
+                      type="text"
+                      id="phone"
+                      class="form-control"
+                      placeholder="youremail@example.com"
+                      required
+                    />
+                  </div>
+                  <!--phone-->
+                  <div class="col-md-6 form-group">
+                    <label for="phone" class="">Phone Number</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      class="form-control"
+                      placeholder="+91 98765 43210"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <!--address-->
+                  <div class="col-md-6 form-group">
+                    <label for="address" class="">Address</label>
+                    <input
+                      type="text"
+                      id="address"
+                      class="form-control"
+                      placeholder="1234 Main St"
+                      required
+                    />
+                  </div>
+
+                  <!--address-2-->
+                  <div class="col-md-6 form-group">
+                    <label for="address-2" class="">Address 2 (optional)</label>
+                    <input
+                      type="text"
+                      id="address-2"
+                      class="form-control"
+                      placeholder="Nearest Landmark"
+                    />
+                  </div>
+                </div>
+
+                <!--Grid row-->
+                <div class="row">
+                  <!--Grid column-->
+                  <div class="col-md-4 form-group">
+                    <label for="city">City</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="city"
+                      placeholder="Kolkata"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please provide a valid city.
+                    </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-4 form-group">
+                    <label for="state">State</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="state"
+                      placeholder="West Bengal"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please provide a valid state.
+                    </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-4 form-group">
+                    <label for="zip">Zip</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="zip"
+                      placeholder="90210"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Zip code required.
+                    </div>
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+
+                <hr />
+
+                <div class="form-group custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="save-info"
+                  />
+                  <label class="custom-control-label" for="save-info"
+                    >Please create my account</label
+                  >
+                </div>
+
+                <hr />
+
+                <div class="form-group d-block my-3">
+                  <h4>Payment Method</h4>
+                  <div class="form-group custom-control custom-radio">
+                    <input
+                      type="radio"
+                      name="paymentMethod"
+                      id="paytm"
+                      class="custom-control-input"
+                      checked
+                      required
+                    />
+                    <label class="custom-control-label" for="paytm">
+                      <img
+                        src="data:image/webp;base64,UklGRmQEAABXRUJQVlA4TFcEAAAvYMAJENcHN5Js10rvfcL9AsiH/C1CoTDVWVQQDNu2ccS0/Qf+YoiNJCmSog6e38X3+n3hSUi2tadt/P2SGmaGaffQURfSFXTchfD2mJlrkBT9Xx2QAVX2Qq80B+J9mL+TPvjEhq/1KNbZbGB4goKI49RLhoSIBEJBEBGKAkSAh4dCQRAKRQnCg4WwGKIXKT6gBXFRkF6RQCQkYiGzLA9CGzyClIKC+CwCFMVnQEBIIy3EZ2HMxSxGMMxiWLgwGI6UWrHz8s6KGBYoL/zc1vWxlpCfvrbfDBdvh88+9h/vera7ZVFvytWe2/B4drB75+60N7klH7dWzkTWLwLXEDi2BceAHD5mqU2OAB8UNUZE5KW2rFJyxAqDsBgaLJZaHVAeudT1L2aVfJBGTZ2wil/ST+mqtO7wtRv6ogGBCw1yjRoAwBVBIJfSZQBQh8ABAAwEBoCFAVADALQAAAYAAAACgfwD/g3lFzm+8IocISalsQTlm4L/kofUOk+lBinfMab8Ehp7qMlGEM0cz3a4Rm7x9BPGn3v1zN2Lf0KffBK0aNs6tjfri80ntq3fsW2njFE3NmvEtm07dWPriWrE9u1z3vOxvIro/wTwv+CEMokiXKwxKSPby8bkjmyvGmPyEJIPBnsP9Hk8Hj9r1qxZ02f3lh4NHjx48HxnzuDBg8e9Aambv1DKGGNyNu7cFXo16di0Yxto/WKd9r2cFvXqNtZ8a5X3Vkt7rHzw8gfOOusugLnWfYfEmYy2FTWN26G0Mcbkfom25Y0xJn9DL6v/8olzwMNauxrYLkyEscLbJE+vakq84F3YeNb2OKazm52vNfZD2CLMgqnCWyTNqOpEVT+0LQNjFwN3VRdVYz1SZFB1DkJUgD4H9qvsYs0Y4U2SZFY1CUIu1Zmd22+dE94HpqxwV50QpmuGCO+S6vWoqFxOluJRpdJ6dK9UOZsUV72QkFV1AFgjjES5TxivmSyswY1xcuBKjaC+UBzo6fRQHXoOy4URzsMZn37y3o0LwiTNYOF3oZjTI6WmJbQUagAFA9AbriquHrFar0UwT1gjlBNe03SGzkJFoIJ/+4Hrwki4ZfWT+FEYDjdCqIB/R0cPHnNb+JiV1s/pbBHspa9sOGmnYf2dwGrJO+z6PvBrCuMiy3GmCN9Mnjn4ogc/RZSPGCZsAH72eno5giyFz4RfgV1ecPOLY6dOnAyr09uuXNn2w58LgbHCemCHRh4VTgdQjhE2AXsVvgH9+zzzPbop/BYeh54phgqn167YcM7Lt/v8uXPnTlt5Q5j0VswRtFPg+VmrvhZ2vjv+zIDn3+n6hdxx5/AjBVP9GQTPv1f9gX9VhC7QQkgAyjvZJSv21rDkhOpAf3hutauQ8zqmm1NG6AjNhJJALsdIa3fv3r17jU9Fv2W/bLvibt228T7gW7vvtrvv1tpZeL6SL2/evNHJnHYxUVFRZdNAuhJFyhUt1wCoFRUVFVVN+i8cAA=="
+                        alt="Paytm"
+                        for="paytm"
+                      />
+                    </label>
+                  </div>
+                  <div class="form-group custom-control custom-radio">
+                    <input
+                      id="paypal"
+                      name="paymentMethod"
+                      type="radio"
+                      class="custom-control-input"
+                      required
+                    />
+                    <label class="custom-control-label" for="paypal">
+                      <img
+                        src="images/other/paypal.png"
+                        alt="PayPal"
+                        for="paypal"
+                      />
+                    </label>
+                  </div>
+                  <div class="form-group custom-control custom-radio">
+                    <input
+                      id="cod"
+                      name="paymentMethod"
+                      type="radio"
+                      class="custom-control-input"
+                      required
+                    />
+                    <label class="custom-control-label" for="cod"
+                      >Cash On delivery</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/.Card-->
+          </form>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-4 mb-4">
+          <div class="basket">
+            <!-- Heading -->
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-muted">Order Summary</span>
+              <span class="badge badge-secondary badge-pill">3</span>
+            </h4>
+
+            <!-- Cart -->
+            <ul class="list-group mb-3 z-depth-1">
+              <li
+                class="list-group-item d-flex justify-content-between lh-condensed basket-product px-3"
+              >
+                <div class="product-details">
+                  <h4>
+                    <strong><span class="item-quantity">2</span> x </strong>
+                    Barnesbeg Special Summer Green Tea
+                  </h4>
+                  <p class="text-muted product__pkg">100 gm | 40 cups</p>
+                </div>
+                <span class="text-muted inr subtotal">318</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between lh-condensed basket-product px-3"
+              >
+                <div class="product-details">
+                  <h4>
+                    <strong><span class="item-quantity">1</span> x </strong>
+                    Darjeeling Roasted Black Tea
+                  </h4>
+                  <p class="text-muted product__pkg">100 gm | 40 cups</p>
+                </div>
+                <span class="text-muted inr subtotal">69</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between lh-condensed px-3"
+              >
+                <div class="product-details">
+                  <span class="heading">
+                    Shipping
+                  </span>
+                </div>
+                <span class="text-muted"
+                  ><span id="basket-shipping" class="currency inr"
+                    >&#8377;</span
+                  ></span
+                >
+              </li>
+              <li
+                class="list-group-item justify-content-between bg-light d-none"
+                for="promo-code"
+              >
+                <div class="text-success">
+                  <h6 class="my-0">Promo code</h6>
+                  <small>COUPONCODE</small>
+                </div>
+                <div class="text-success">
+                  -&#8377;<span class="currency"></span>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between px-3">
+                <span class="heading">Total (INR)*</span>
+                <span
+                  id="basket-total"
+                  class="total-value final-value currency heading inr"
+                ></span>
+              </li>
+              <li class="list-group-item px-3">* Inc. of all taxes</li>
+            </ul>
+            <!-- Cart -->
+
+            <!-- Promo code -->
+            <div for="promo-code" class="alert alert-danger hide">
+              Promo Code not valid
+            </div>
+            <div for="promo-code" class="alert alert-success hide">
+              Promo Code applied successfully
+            </div>
+            <div class="input-group">
+              <input
+                id="promo-code"
+                type="text"
+                class="form-control"
+                placeholder="Promo code"
+                style="text-transform: uppercase;font-size: inherit;"
+              />
+              <div class="input-group-append">
+                <button
+                  class="btn btn-outline-secondary mt-0 ml-0 promo-code-cta"
+                  type="button"
+                  style="border-radius: 0 0.25em 0.25em 0;"
+                >
+                  Redeem
+                </button>
+              </div>
+            </div>
+            <!-- Promo code -->
+
+            <hr class="mb-4" />
+            <button
+              class="btn btn-green btn-block"
+              type="submit"
+              id="newUserPayment"
+              style="border-radius: 0.25em;"
+            >
+              Proceed to pay
+            </button>
+          </div>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!--Main layout-->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-3">
+            <img src="images/logo.png" alt="" />
+            <p>A part of Aventto Tea Company</p>
+          </div>
+          <div class="col-sm-12 col-md-3 mt-4">
+            <div class="h4 footer__header">Contact</div>
+            <ul>
+              <li>+91 7980472015</li>
+              <li>+91 98765 43210</li>
+            </ul>
+            <ul>
+              <li><a href="mailto:aventto@tea.com">aventto@tea.com</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-3 mt-4">
+            <div class="h4 footer__header">varieties</div>
+            <ul>
+              <li>
+                <a href="/collections/green-teas">Green Tea</a>
+              </li>
+              <li>
+                <a href="/collections/black-teas">Black Tea</a>
+              </li>
+              <li>
+                <a href="/collections/white-teas">White Tea</a>
+              </li>
+              <li>
+                <a href="/collections/oolong-teas">Oolong Tea</a>
+              </li>
+              <li>
+                <a href="/collections/gifts">Gifts &amp; Accessories</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-3 mt-4">
+            <div class="h4 footer__header">INFORMATION</div>
+            <ul>
+              <li>
+                <a href="/pages/terms-of-use">Terms of Use</a>
+              </li>
+
+              <li>
+                <a href="/pages/privacy-policy">Privacy Policy</a>
+              </li>
+
+              <li>
+                <a href="/pages/return-policy">Return Policy</a>
+              </li>
+
+              <li>
+                <a href="/pages/faqs">FAQs</a>
+              </li>
+
+              <li>
+                <a href="/pages/contact-us">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <div class="footer__payment-icons">
+              <img src="images/footer__mastercard.webp" alt="" />
+              <img src="images/footer__visa.webp" alt="" />
+              <img src="images/footer__amex.webp" alt="" />
+              <img src="images/footer__paytm.webp" alt="" />
+              <img src="images/footer__paypal.webp" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <a class="footer__social-icons" href="#" target="_blank"
+              ><i class="fa fa-facebook fa-2x" aria-hidden="true"></i
+            ></a>
+            <a class="footer__social-icons" href="#" target="_blank"
+              ><i class="fa fa-twitter fa-2x" aria-hidden="true"></i
+            ></a>
+            <a class="footer__social-icons" href="#" target="_blank"
+              ><i class="fa fa-instagram fa-2x" aria-hidden="true"></i
+            ></a>
+            <a class="footer__social-icons" href="#" target="_blank"
+              ><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i
+            ></a>
+            <a class="footer__social-icons" href="#" target="_blank"
+              ><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer__info">
+          <ul>
+            <li>&copy; 2019 Tea Brewing, All rights reserved.</li>
+            <li>
+              Powered by
+              <a class="link" href="https://simplysyntax.in"
+                >Simply Syntax Technologies</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!--  Javascript  -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.flipster.min.js"></script>
+    <script src="js/bootstrap-input-spinner.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/fotorama.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no"
+      />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+      <!--  Bootstrap CSS  -->
+      <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+      <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+      <!-- Design Fonts -->
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+
+      <!--  Flipster  -->
+      <link rel="stylesheet" href="css/jquery.flipster.css" />
+
+      <!-- Slick -->
+      <link rel="stylesheet" href="css/slick-theme.css" />
+      <link rel="stylesheet" href="css/slick.css" />
+
+      <!--  Main CSS  -->
+      <link rel="stylesheet" href="css/main.css" />
+      <!-- Custom styles for this template -->
+      <link href="css/simple-sidebar.css" rel="stylesheet" />
+
+      <title>Simply Story</title>
+    </head>
+  </head>
+  <body>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="images/logo.png" alt="Logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav w-100">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Write a Story</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="story.html">Read a Story</a>
+          </li>
+          <li class="nav-item ml-auto">
+            <a href="#" class="btn btn-outline-primary ml-auto">contact us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Login -->
+    <section class="container">
+      <div class="grid">
+        <form class="form login">
+          <div class="form__field">
+            <label for="login__name"
+              ><i class="fa fa-user"></i
+              ><span class="hidden">Full Name</span></label
+            >
+            <input
+              id="login__name"
+              type="text"
+              name="name"
+              class="form__input"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+
+          <div class="form__field">
+            <label for="login__email"
+              ><i class="fa fa-envelope"></i
+              ><span class="hidden">Email</span></label
+            >
+            <input
+              id="login__email"
+              type="email"
+              name="email"
+              class="form__input"
+              placeholder="Email"
+              required
+            />
+          </div>
+
+          <div class="form__field">
+            <label for="login__contact"
+              ><i class="fa fa-phone"></i
+              ><span class="hidden">Contact No</span></label
+            >
+            <input
+              id="login__contact"
+              type="text"
+              name="contact"
+              class="form__input"
+              placeholder="Contact No"
+              required
+            />
+          </div>
+
+          <div class="form__field">
+            <label for="login__password"
+              ><i class="fa fa-lock"></i
+              ><span class="hidden">Full Name</span></label
+            >
+            <input
+              id="login__password"
+              type="password"
+              name="password"
+              class="form__input"
+              placeholder="Password"
+              required
+            />
+          </div>
+
+          <div class="form__field">
+            <input class="btn btn-primary" type="submit" value="Sign In" />
+          </div>
+        </form>
+
+        <p class="text--center">
+          Already a member? <a class="link" href="login.html">Log In</a>
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <img class="logo" src="images/logo.png" alt="logo" />
+        </div>
+        <div class="row footer__links mt-3 mb-5">
+          <a href="#"><span class="fa fa-facebook"></span></a>
+          <a href="#"><span class="fa fa-instagram"></span></a>
+          <a href="#"><span class="fa fa-youtube"></span></a>
+          <a href="#"><span class="fa fa-twitter"></span></a>
+        </div>
+        <div class="row footer__links">
+          <a href="index.html">Home</a>
+          <a href="#">Write a Story</a>
+          <a href="story.html">Read a Story</a>
+        </div>
+      </div>
+      <div class="footer__copy">
+        &copy; Simply Story 2019, All Rights Reserved
+      </div>
+    </footer>
+
+    <!--  Javascript  -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.flipster.min.js"></script>
+    <script src="js/bootstrap-input-spinner.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/fotorama.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

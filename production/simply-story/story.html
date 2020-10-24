@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--  Bootstrap CSS  -->
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Design Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+
+    <!-- Slick -->
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+
+    <!--  Main CSS  -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Simply Story</title>
+  </head>
+  <body>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="images/logo.png" alt="Logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav w-100">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Write a Story</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="story.html">Read a Story</a>
+          </li>
+          <li class="nav-item ml-auto">
+            <a href="#" class="btn btn-outline-primary ml-auto">contact us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="blur-cover">
+      <div class="hero">
+        <img class="cover" src="images/img-latest-1.jpg" />
+        <div class="hero-content">
+          <div class="card-img">
+            <img class="rounded" src="images/img-latest-1.jpg" alt="" />
+          </div>
+          <div style="flex: 1 100%;">
+            <div class="has-links">
+              <span>Girl on the train</span>
+              <div class="author">by <a href="#">Somendra Darolia</a></div>
+            </div>
+            <div class="meta mt-4" style="font-size: 14px;">
+              <span class="likes-count mr-2">
+                <i class="far fa-heart mr-2" aria-hidden="true"></i>13
+              </span>
+              <span class="comments-count mr-2">
+                <i class="far fa-comments mr-2" aria-hidden="true"></i>8
+              </span>
+              <span class="views-count mr-2">
+                <i class="far fa-eye mr-2" aria-hidden="true"></i>5.1 k
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chapter -->
+    <section class="container-fluid">
+      <div class="row">
+        <div class="d-none d-md-block col-md-3">
+          <div class="tableofcontents sidebar">
+            <div class="app-sidebar">
+              <div class="app-sidebar__inner">
+                <ul class="vertical-nav-menu">
+                  <h4 class="app-sidebar__heading">Table Of Contents</h4>
+                  <li class="mm-active">
+                    <ul class="mm-collapse mm-show">
+                      <li>
+                        <a class="mm-active" href="#chapter-1">Introduction</a>
+                      </li>
+                      <li><a href="#chapter-2">Chapter 2</a></li>
+                      <li><a href="#">Chapter 3</a></li>
+                      <li><a href="#">Chapter 4</a></li>
+                      <li><a href="#">Chapter 5</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <button
+            class="btn btn-primary d-md-none"
+            data-toggle="modal"
+            data-target="#tableofcontents"
+          >
+            Table Of Contents
+          </button>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="tableofcontents"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="tobLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="tobLabel">
+                    Table Of Contents
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="d-flex">
+                    <div class="card-img">
+                      <a href="story.html"
+                        ><img class="rounded" src="images/img-latest-1.jpg"
+                      /></a>
+                    </div>
+                    <div style="flex: 1 100%;">
+                      <div class="has-links">
+                        <span>Girl on the train</span>
+                        <div class="author">
+                          by <a href="#">Somendra Darolia</a>
+                        </div>
+                      </div>
+                      <div class="meta mt-4" style="font-size: 14px;">
+                        <span class="likes-count mr-2">
+                          <i class="far fa-heart mr-2" aria-hidden="true"></i>13
+                        </span>
+                        <span class="comments-count mr-2">
+                          <i class="far fa-comments mr-2" aria-hidden="true"></i
+                          >8
+                        </span>
+                        <span class="views-count mr-2">
+                          <i class="far fa-eye mr-2" aria-hidden="true"></i>5.1
+                          k
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="tableofcontents">
+                    <div class="app-sidebar">
+                      <div class="app-sidebar__inner">
+                        <ul class="vertical-nav-menu">
+                          <li class="mm-active">
+                            <ul class="mm-collapse mm-show">
+                              <li>
+                                <a class="mm-active" href="#chapter-1"
+                                  >Introduction</a
+                                >
+                              </li>
+                              <li><a href="#chapter-2">Chapter 2</a></li>
+                              <li><a href="#">Chapter 3</a></li>
+                              <li><a href="#">Chapter 4</a></li>
+                              <li><a href="#">Chapter 5</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="story-container">
+            <div class="d-flex justify-content-between">
+              <h5 class="mt-4">Chapter-1 Introduction</h5>
+              <button class="btn btn-link">
+                <i class="far fa-bookmark"></i>
+              </button>
+            </div>
+            <hr />
+            <div class="story-content mt-3">
+              <div id="chapter-1">
+                <p>
+                  Whenever I visited my grandmother's house as a teenager, there
+                  was one ritual I could count on. I would always inevitably not
+                  bring enough books to read for the duration of our visit
+                  there. So I would go to her bookshelf, searching the shelves
+                  for anything of interest. However before I could even REACH
+                  for one of the novels, my grandmother would always say, "Don't
+                  touch that!"
+                </p>
+                <img src="http://unsplash.it/700/300" alt="" />
+                <p>
+                  And just that quickly, the books were deemed not for me. As I
+                  stared at my grandmother's rows of Harlequin novels, she would
+                  always tell me those are grown-up books.
+                  <br />
+                  I didn't understand the reasoning behind her refusal until I
+                  was much older. When I finally did, my second question was if
+                  these were such taboo books then why were they basically on
+                  display? Even after she passed away (may she rest in peace),
+                  this always puzzled me.
+                </p>
+              </div>
+              <div id="chapter-2">
+                <h3>Chapter 2</h3>
+                <hr />
+                <img src="http://unsplash.it/800/300" alt="" />
+                <p>
+                  Whenever I visited my grandmother's house as a teenager, there
+                  was one ritual I could count on. I would always inevitably not
+                  bring enough books to read for the duration of our visit
+                  there. So I would go to her bookshelf, searching the shelves
+                  for anything of interest. However before I could even REACH
+                  for one of the novels, my grandmother would always say, "Don't
+                  touch that!"
+                </p>
+                <p>
+                  And just that quickly, the books were deemed not for me. As I
+                  stared at my grandmother's rows of Harlequin novels, she would
+                  always tell me those are grown-up books.
+                  <br />
+                  I didn't understand the reasoning behind her refusal until I
+                  was much older. When I finally did, my second question was if
+                  these were such taboo books then why were they basically on
+                  display? Even after she passed away (may she rest in peace),
+                  this always puzzled me.
+                </p>
+              </div>
+
+              <p>
+                Thank you for taking the time to read about my journey. If you
+                decide to read the preview, I hope you enjoy it. And if you read
+                beyond that...well, my grandma and I would be truly grateful.
+              </p>
+
+              <a href="#" class="btn btn-primary btn-block"
+                >continue reading <i class="fas fa-angle-right"></i
+              ></a>
+            </div>
+            <div class="text-center mt-3">
+              <button class="btn btn-light btn-sm" type="submit"><i class="fas fa-plus mr-2"></i>Add to shelf</button>
+              <span class="mx-2"></span>
+              <button class="btn btn-light btn-sm" type="submit"><i class="far fa-heart mr-2" aria-hidden="true"></i>Like</button>
+            </div>
+          </div>
+          <!-- Comments -->
+          <div class="mt-4 comments">
+            <!-- Add comment -->
+            <div class="comment comment--add">
+              <a href="#" class="comment__avatar">
+                <img
+                  src="images/avatar-default.png"
+                  alt=""
+                  class="rounded-circle"
+                />
+              </a>
+              <form>
+                <textarea class="form-control" placeholder="Leave a comment"></textarea>
+                <input class="btn btn-primary btn-sm float-right mt-3" type="submit" value="Submit">
+              </form>
+            </div>
+            <!-- Read comments -->
+            <div class="comment border-top pt-3">
+              <a href="#" class="comment__avatar">
+                <img
+                  src="https://i.pravatar.cc/200"
+                  alt=""
+                  class="rounded-circle"
+                />
+              </a>
+              <div class="comment__content">
+                <a href="#"><h5>John Doe</h5></a>
+                <small class="text-muted">3 days ago</small>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugiat, cupiditate.
+                </p>
+              </div>
+            </div>
+            <div class="comment">
+              <a href="#" class="comment__avatar">
+                <img
+                  src="images/avatar-default.png"
+                  alt=""
+                  class="rounded-circle"
+                />
+              </a>
+              <div class="comment__content">
+                <a href="#"><h5>John Doe</h5></a>
+                <small class="text-muted">13 days ago</small>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugiat, cupiditate.
+                </p>
+              </div>
+            </div>
+            <div class="comment">
+              <a href="#" class="comment__avatar">
+                <img
+                  src="https://i.pravatar.cc/200"
+                  alt=""
+                  class="rounded-circle"
+                />
+              </a>
+              <div class="comment__content">
+                <a href="#"><h5>John Doe</h5></a>
+                <small class="text-muted">23 days ago</small>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugiat, cupiditate.
+                </p>
+              </div>
+            </div>
+            <button class="btn btn-secondary" type="submit">Load more comments</button>
+          </div>
+          <!-- Comments END -->
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <img class="logo" src="images/logo.png" alt="logo" />
+        </div>
+        <div class="row footer__links mt-3 mb-5">
+          <a href="#"><span class="fab fa-facebook-f"></span></a>
+          <a href="#"><span class="fab fa-instagram"></span></a>
+          <a href="#"><span class="fab fa-youtube"></span></a>
+          <a href="#"><span class="fab fa-twitter"></span></a>
+        </div>
+        <div class="row footer__links">
+          <a href="index.html">Home</a>
+          <a href="#">Write a Story</a>
+          <a href="story.html">Read a Story</a>
+        </div>
+      </div>
+      <div class="footer__copy">
+        &copy; Simply Story 2019, All Rights Reserved
+      </div>
+    </footer>
+
+    <!--  Javascript  -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

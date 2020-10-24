@@ -1,0 +1,744 @@
+/* CSS BoilerPlate by Zoayb */
+
+@font-face {
+  font-family: "Courgette";
+  src: url("../fonts/Courgette.woff2") format("woff2");
+}
+@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:400,800&display=swap");
+
+$black: #231f20;
+$text: #3a3a3a;
+$red-orig: #9f363b;
+$yellow-orig: #fdca2f;
+$red: #db323a;
+$yellow: #fac217;
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 13px;
+  line-height: 30px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  color: $text;
+  background-color: #fff;
+  line-height: 1.6666667rem;
+  font-size: 1rem;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  color: $black;
+  margin: 2rem 0 1rem;
+}
+
+h1,
+.h1 {
+  font-family: "Courgette", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2,
+.h2 {
+  font-size: 2rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.section-title {
+  text-align: center;
+}
+
+hr {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  display: block;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+small {
+  color: inherit;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+footer {
+  padding-top: 2rem;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// ===***  Optional ***=== //
+
+.nowrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+[class*="col-"] {
+  margin-bottom: 30px;
+}
+
+a {
+  color: inherit;
+}
+
+// ===*** Buttons ***=== //
+
+.btn {
+  padding: 0.375rem 1.5rem;
+  line-height: 1.5;
+  border-radius: 1.5rem;
+
+  &.btn-white {
+    background: #fff;
+    color: $black;
+
+    &:hover {
+      background: $red;
+      color: #fff;
+    }
+  }
+
+  &.btn-red {
+    background: $red;
+    color: #fff;
+
+    &:hover {
+      background: #fff;
+      color: $black;
+    }
+  }
+}
+
+// ===*** Navbar ***=== //
+
+.bg-dark {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.white-bg {
+  background: rgba(255, 255, 255, 1) !important;
+}
+
+.navbar {
+  width: 100%;
+  transition: background 0.4s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.navbar-nav {
+  width: 100%;
+
+  li.nav-item .nav-link {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 0.5rem;
+    color: #fff;
+    line-height: auto;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+}
+
+.navbar-dark .nav-item.active .nav-link {
+  color: $yellow;
+}
+
+.navbar-brand {
+  width: auto;
+  height: 4rem;
+  padding: 0.5rem 0;
+
+  img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+// ===*** Header ***=== //
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/banner.jpg) center no-repeat;
+  background-size: cover;
+}
+
+// ===*** Hero ***=== //
+
+.hero-text {
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: "Courgette", sans-serif;
+  width: 100%;
+  margin: auto auto auto 10vw;
+  position: absolute;
+  bottom: 10vh;
+}
+
+// ===*** About ***=== //
+
+#about-us {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 281px;
+    height: 386px;
+    top: 10vmax;
+    left: 54px;
+    background: url(../images/samosa.png) no-repeat;
+    background-size: 75%;
+    z-index: 22;
+  }
+}
+
+.card {
+  height: 100%;
+  padding: 20px 30px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  border-radius: 0.45rem;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.gradient-below {
+  border-radius: 0 0 0.45rem 0.45rem;
+  bottom: 0;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  background-image: linear-gradient(110deg, $red 0, $yellow 100%);
+}
+
+// .gradient1 {
+//   background-image: linear-gradient(110deg, #a55ccb 0, #0a46cf 100%);
+// }
+
+// .gradient2 {
+//   background-image: linear-gradient(110deg, #e99019 0, #e62f4a 100%);
+// }
+
+// .gradient3 {
+//   background-image: linear-gradient(110deg, #e62f4a 0, #73136e 100%);
+// }
+
+.quote {
+  background: url(../images/vidhan-soudha-bangalore-gradient.jpg) center
+    no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+  & .quote_text {
+    background: rgba(219, 50, 58, 0.7);
+    min-height: 30vh;
+    max-width: 700px;
+    padding: 1rem;
+    margin: 0 auto;
+    font-family: "Courgette";
+    text-align: center;
+    font-size: 2vmax;
+    line-height: 2;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+}
+
+// ===*** What We Do ***=== //
+
+#what-we-do {
+  & img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.img-brand-container {
+  width: 100px;
+  height: 100px;
+  background: #e6e6e6;
+  padding: 18px;
+  margin: 0 auto;
+  border: 1px solid #dadada;
+  box-shadow: 1px 3px 4px #dadada;
+  border-radius: 50%;
+  overflow: hidden;
+
+  & .img-brand {
+    height: 100%;
+  }
+}
+
+// ===*** Misc ***=== //
+
+.red {
+  color: $red;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+.heading {
+  text-align: center;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -1rem;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: $yellow;
+  }
+}
+
+// ===*** Products ***=== //
+
+#products {
+  background-image: url(../images/decorative-background-2.jpg);
+  background-repeat: no-repeat repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+
+  & .product-img {
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    border-radius: 0.45rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-out;
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+    }
+
+    & small {
+      position: absolute;
+      color: #fff;
+      z-index: 999;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  }
+
+  & .and-more {
+    background: #797979;
+    width: 100%;
+    height: 200px;
+    border-radius: 0.45rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-out;
+
+    & small {
+      position: absolute;
+      color: #fff;
+      z-index: 999;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  }
+}
+
+// ===*** Order ***=== //
+
+.order-now {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: $yellow;
+  background: linear-gradient(-45deg, $yellow, $red);
+  background-size: 400% 400%;
+  animation: gradientBG 7s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#order-now {
+  text-align: center;
+
+  & .order_half {
+    width: 100%;
+    height: 100%;
+    padding: 8vw;
+    color: #fff;
+    background: linear-gradient(
+        110deg,
+        rgba($yellow, 0.6) 0,
+        rgba($red, 0.6) 100%
+      ),
+      url(../images/image-shop.jpg) left no-repeat;
+    background-size: cover;
+
+    &.order_half-2 {
+      background: linear-gradient(
+          110deg,
+          rgba($yellow, 0.6) 0,
+          rgba($red, 0.6) 100%
+        ),
+        url(../images/image-eating.jpg) left no-repeat;
+      background-size: cover;
+    }
+
+    & h1,
+    h2,
+    h3,
+    a {
+      color: #fff;
+    }
+
+    & a {
+      font-size: 110%;
+    }
+
+    & .logo-container {
+      width: 80%;
+      padding: 0 1rem;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 30px;
+
+      & img {
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+// ===*** Customer ***=== //
+
+.carousel {
+  margin: 50px auto;
+  padding: 0 70px;
+
+  & .carousel-indicators {
+    bottom: -40px;
+  }
+
+  & .item {
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    min-height: 290px;
+
+    & .img-box {
+      width: 135px;
+      height: 135px;
+      margin: 0 auto;
+      padding: 5px;
+      border: 2px solid #e0b61e;
+      box-shadow: 1px 3px 4px #e0b61e;
+      border-radius: 50%;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  & .testimonial {
+    padding: 30px 0 10px;
+  }
+
+  & .overview {
+    font-style: italic;
+
+    & b {
+      text-transform: uppercase;
+      color: $red;
+    }
+  }
+
+  .carousel-control {
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+    background: none;
+
+    & i {
+      font-size: 68px;
+      line-height: 42px;
+      position: absolute;
+      display: inline-block;
+      color: $red;
+      text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+    }
+
+    &:focus,
+    &:hover {
+      color: $red;
+      text-decoration: none;
+      filter: alpha(opacity=90);
+      outline: 0;
+      opacity: 0.9;
+    }
+  }
+}
+
+// ===*** Brands ***=== //
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: "";
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+// ===*** Careers ***=== //
+
+#careers {
+  background: #f2f2f2;
+  text-align: center;
+
+  & a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 4px solid rgba($color: $yellow, $alpha: 0.5);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      border-bottom: 4px solid rgba($color: $yellow, $alpha: 0.8);
+    }
+  }
+}
+
+// ===*** Contact Us ***=== //
+
+#contact-us {
+  color: #fff;
+  background: #202024;
+
+  h1,
+  h2,
+  h3,
+  p,
+  a {
+    color: inherit;
+  }
+
+  .contact_info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+
+  .map {
+    margin-top: 2rem;
+    width: 100%;
+    height: 300px;
+
+    & iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// ===*** Contact Us ***=== //
+
+footer {
+  color: #fff;
+  background: #262629;
+  padding-bottom: 2rem;
+  text-align: center;
+
+  & span {
+    font-size: 0.67rem;
+    font-weight: 400;
+    margin: 0 auto;
+  }
+}
+
+/* Media Queries */
+
+/* Responsive font-size - works for all devices */
+
+@media (min-width: 375px) {
+  :root {
+    font-size: calc(13px + 6 * (100vw - 375px) / 1825);
+  }
+}
+
+@media (max-width: 768px) {
+  #about-us {
+    &:before {
+      top: 7vh;
+      left: 0;
+      background-size: 37.6vw;
+    }
+  }
+
+  #contact-us:after {
+    position: absolute;
+    content: "";
+    background: url(../images/embel-2.png) center no-repeat;
+    width: 270px;
+    height: 420px;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+/* Glad you're so inquisitive */
+
+/* Just some cool stuffs that I like */
+
+::selection {
+  background-color: $red;
+  color: #fff;
+}

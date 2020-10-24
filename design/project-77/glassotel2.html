@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>Simply Syntax Technologies</title>
+    <link rel="stylesheet" href="../preloader/style.css" />
+</head>
+<body style="width:100vw; overflow-x: hidden; margin: 0;">
+    <div id="preloader">
+        <!-- Spinner 1 -->
+        <div class="spinner spinner-1"></div>
+
+        <!-- Spinner 2-->
+        <!-- <div class="spinner spinner-2">
+        <span></span><span></span><span></span>
+        </div> -->
+    </div>
+
+    <img src="home.png" style="width:100%;">
+
+
+    <!-- JS for loader to fade away -->
+    <script>
+      window.addEventListener("load", () => {
+        //triggers after load complete
+        setTimeout(() => {
+          var preloader = document.getElementById("preloader");
+          preloader.classList.add("preloaderFadeOut");
+        }, 2000)
+      });
+    </script>
+
+</body>
+</html>

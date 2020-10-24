@@ -1,0 +1,266 @@
+/* CSS BoilerPlate by Zoayb */
+@import url("https://fonts.googleapis.com/css?family=Manjari:400,700&display=swap");
+@font-face {
+  font-family: "Lobster";
+  src: url("../fonts/LobsterTwo-Regular.woff") format("woff");
+}
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 18px;
+  line-height: 30px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  color: #3a3a3a;
+  background-color: #fff;
+  line-height: 1.6666667rem;
+  font-size: 1rem;
+  font-family: "Manjari", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lobster", sans-serif;
+  color: #050505;
+  margin: 0 auto 1rem;
+}
+
+h1,
+.h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2,
+.h2 {
+  font-size: 2rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.section-title {
+  text-align: center;
+}
+
+hr {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  display: block;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+small {
+  color: inherit;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+[class*="col-"] {
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 0.375rem 1.5rem;
+  line-height: 1.5;
+  border-radius: 1.5rem;
+}
+
+.btn.btn-white {
+  background: #fff;
+  color: #050505;
+}
+
+.btn.btn-white:hover {
+  background: #00a651;
+  color: #014c26;
+}
+
+.btn.btn-green {
+  background: #00a651;
+  color: #014c26;
+}
+
+.btn.btn-green:hover {
+  background: #fff;
+  color: #050505;
+}
+
+.navbar {
+  background: #ffab46 !important;
+  padding: 20px;
+}
+
+.navbar .nav-item {
+  margin-left: 2rem;
+}
+
+.hero {
+  width: 100%;
+  height: 60vh;
+  background: url(../images/hero.jpg) center no-repeat;
+}
+
+.theme-img {
+  width: 30vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  height: 100%;
+  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  border-radius: 0.45rem;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.members {
+  margin: 2rem 0;
+}
+
+.members .img-square-wrapper {
+  width: 200px;
+}
+
+.members .img-square-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#events {
+  background: #ffab46;
+  position: relative;
+}
+
+#events .date {
+  font-size: 0.65em;
+  background: #00a651;
+  color: white;
+  padding: 0.4em 0.8em;
+  border-radius: 0.4em;
+}
+
+#events:after {
+  position: absolute;
+  content: '';
+  background: url(../images/embel-1.png) center no-repeat;
+  background-size: 100%;
+  left: 0;
+  bottom: 0;
+  width: calc(312px/2);
+  height: calc(325px/2);
+}
+
+.map iframe {
+  width: 100%;
+  height: 80vh;
+}
+
+#contact-us {
+  background: #ffab46;
+  position: relative;
+}
+
+#contact-us .has-fa-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contact-us .has-fa-icon .fa {
+  margin-right: 1em;
+}
+
+footer {
+  padding-top: 2rem;
+}
+
+footer .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .social-icons span {
+  margin: 1rem 0.5rem;
+}
+
+footer .footer_info {
+  background: #e0dede;
+  text-align: center;
+  font-size: smaller;
+}
+
+footer .footer_info a {
+  color: inherit;
+}
+
+footer .footer_info a:hover {
+  color: #014c26;
+}
+
+/* Media Queries */
+/* Responsive font-size - works for all devices */
+@media (min-width: 375px) {
+  :root {
+    font-size: calc(18px + 6 * (100vw - 375px) / 1825);
+  }
+}
+
+/* Glad you're so inquisitive */
+/* Just some cool stuffs that I like */
+::-moz-selection {
+  background-color: #014c26;
+  color: #fff;
+}
+::selection {
+  background-color: #014c26;
+  color: #fff;
+}
+/*# sourceMappingURL=main.css.map */

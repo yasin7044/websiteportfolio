@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--  Bootstrap CSS  -->
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Design Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/css/flag-icon.min.css"
+    />
+
+    <!--  Fotorama  -->
+    <link rel="stylesheet" href="css/fotorama.css" />
+
+    <!--  Main CSS  -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Single Product</title>
+  </head>
+  <body>
+    <!-- Notification Bar -->
+    <div class="top-bar">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <font style="vertical-align: inherit;"
+                ><font style="vertical-align: inherit;"
+                  >Free shipping on orders over &#8377;500
+                </font></font
+              >
+            </li>
+            <li class="list-inline-item">
+              <div class="dropdown">
+                <a
+                  id="langsDropdown"
+                  href="#"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  class="dropdown-toggle"
+                  ><span class="flag-icon flag-icon-in"></span>
+                  <font style="vertical-align: inherit;"
+                    ><font style="vertical-align: inherit;">IND</font></font
+                  ></a
+                >
+                <div
+                  aria-labelledby="langsDropdown"
+                  class="dropdown-menu"
+                  x-placement="bottom-start"
+                  style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(25px, 21px, 0px);"
+                >
+                  <a href="#" class="dropdown-item"
+                    ><span class="flag-icon flag-icon-us"></span>
+                    <font style="vertical-align: inherit;"
+                      ><font style="vertical-align: inherit;">USA</font></font
+                    ></a
+                  ><a href="#" class="dropdown-item">
+                    <span class="flag-icon flag-icon-gb"></span>
+                    <font style="vertical-align: inherit;">UK</font></a
+                  >
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo-small.png" alt="Logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#products">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#variety">Variety</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gifts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="career.html">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">B2B</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="offline-stores.html">Offline Store</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">Contact</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav nav-icons">
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">
+              <span data-notif="3" class="fa fa-shopping-cart"></span> Cart
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">
+              <span class="fa fa-user"></span> Log In
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="fa fa-power-off"></span> Log Out
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Variety</a></li>
+          <li class="breadcrumb-item"><a href="#">Black Tea</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Caramel Spice Chai
+          </li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- Product Starts Here -->
+    <section id="product">
+      <div class="container">
+        <div class="row">
+          <aside class="col-sm-5 border-right">
+            <article class="gallery-wrap">
+              <div class="fotorama" data-nav="thumbs">
+                <img src="images/variety/black-tea_namsang.webp" />
+                <img src="https://unsplash.it/600" />
+                <img
+                  src="https://daa.asn.au/wp-content/plugins/woocommerce/assets/images/placeholder.png"
+                />
+                <img src="https://unsplash.it/700" />
+                <img src="https://unsplash.it/400" />
+              </div>
+              <!-- slider-nav.// -->
+            </article>
+            <!-- gallery-wrap .end// -->
+          </aside>
+          <aside class="col-sm-7">
+            <article class="card-body">
+              <h3 class="title mb-3">Caramel Spice Chai</h3>
+              <div class="reviews">
+                <div class="reviews__rating">
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star-o"></span>
+                </div>
+                <div class="reviews__count">
+                  <a href="#reviews">23 reviews</a>
+                </div>
+              </div>
+              <hr />
+              <div class="box">
+                <span class="has-quantity">3.5oz / 100gm</span>
+                <span class="">40 cups</span>
+              </div>
+              <!-- price-detail-wrap .// -->
+              <hr />
+              <div class="clear-bth"></div>
+              <div class="d-flex align-items-center">
+                <span class="price hide">119</span>
+                <div class="quantity">
+                  <input
+                    type="number"
+                    value="1"
+                    min="1"
+                    class="quantity-field"
+                  />
+                </div>
+                <span class="heading ml-2 text-muted mb-0"><s>₹1000</s></span>
+                <span class="heading subtotal has-currency inr mb-0">700</span>
+                <span
+                  class="ml-3 py-1 px-3"
+                  style="color: #FFFFFF;background: #C1D43A;"
+                  >30% off</span
+                >
+              </div>
+              <div class="mt-5">
+                <a href="#" class="btn btn-green btn-green-o">
+                  Add to cart
+                </a>
+                <button type="button" class="btn btn-outline" disabled>
+                  Out of stock
+                </button>
+              </div>
+              <!-- item-property .// -->
+              <div class="ml-4">Ships in 48 hours.</div>
+            </article>
+            <!-- card-body.// -->
+          </aside>
+          <!-- col.// -->
+        </div>
+        <!-- row.// -->
+        <hr />
+        <section>
+          <dl class="item-property">
+            <dt class="h4">Description</dt>
+            <dd>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
+                pariatur quas adipisci ad neque quidem, nemo, accusantium earum
+                deserunt odit debitis eius exercitationem dolorem aliquid! Sit
+                at nulla quos! Asperiores deserunt perspiciatis eius totam
+                debitis nisi minima aspernatur recusandae commodi!
+              </p>
+            </dd>
+          </dl>
+        </section>
+        <section>
+          <dl class="item-property">
+            <dt class="h4">Ingredients</dt>
+            <div class="ingredients row">
+              <div class="col-6 col-sm-2">
+                <dt>
+                  <img src="images/ingredients/CTC__blacktea.jpg" alt="" />
+                </dt>
+                <dd>Black Tea</dd>
+              </div>
+              <div class="col-6 col-sm-2">
+                <dt>
+                  <img
+                    src="https://daa.asn.au/wp-content/plugins/woocommerce/assets/images/placeholder.png"
+                    alt=""
+                  />
+                </dt>
+                <dd>Cinnamon</dd>
+              </div>
+              <div class="col-6 col-sm-2">
+                <dt>
+                  <img
+                    src="images/ingredients/CTC__Natural-caramel-flavor.jpg"
+                    alt=""
+                  />
+                </dt>
+                <dd>Natural Caramel</dd>
+              </div>
+            </div>
+          </dl>
+        </section>
+        <section>
+          <dl class="item-property">
+            <dt class="h4">The Experience</dt>
+          </dl>
+          <div class="row">
+            <div class="col-12 col-md-7">
+              <small>Liquor</small>
+              <ul class="features">
+                <li class="feature">
+                  <h5>Aroma</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Deleniti iusto earum tenetur atque nisi cupiditate optio
+                    unde adipisci vitae placeat, hic dolor voluptate quam.
+                    Voluptatum.
+                  </p>
+                </li>
+                <li class="feature">
+                  <h5>APPEARANCE</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Excepturi, aliquam.
+                  </p>
+                </li>
+                <li class="feature">
+                  <h5>TASTE</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Excepturi, aliquam.
+                  </p>
+                </li>
+                <li class="feature">
+                  <h5>COMPLEMENTS</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Excepturi, aliquam.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-5">
+              <img
+                src="images/products/product_caramel-spice-chai.webp"
+                alt=""
+              />
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="has-icon">
+                <img src="images/icons/icon-leaves.svg" alt="" />
+              </div>
+              <small>DRY LEAF</small>
+              <ul class="features">
+                <li class="feature">
+                  <h5>Aroma</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Deleniti iusto earum tenetur atque nisi cupiditate optio
+                    unde adipisci vitae placeat, hic dolor voluptate quam.
+                    Voluptatum.
+                  </p>
+                </li>
+                <li class="feature">
+                  <h5>Appearance</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Deleniti iusto earum tenetur atque nisi cupiditate optio
+                    unde adipisci vitae placeat, hic dolor voluptate quam.
+                    Voluptatum.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="has-icon">
+                <img src="images/icons/icon-infusion.svg" alt="" />
+              </div>
+              <small>INFUSION</small>
+              <ul class="features">
+                <li class="feature">
+                  <h5>Aroma</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Deleniti iusto earum tenetur atque nisi cupiditate optio
+                    unde adipisci vitae placeat, hic dolor voluptate quam.
+                    Voluptatum.
+                  </p>
+                </li>
+                <li class="feature">
+                  <h5>Appearance</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Deleniti iusto earum tenetur atque nisi cupiditate optio
+                    unde adipisci vitae placeat, hic dolor voluptate quam.
+                    Voluptatum.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Steep Notes -->
+    <div class="steep-notes">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <img src="images/products/Product-Page-Steeping.webp" alt="" />
+          </div>
+          <div class="col-12 col-md-6 py-5">
+            <h5>STEEPING NOTES</h5>
+            <div>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="notes-table-heading">
+                        <p></p>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="has-icon">
+                        <img src="images/icons/icon-water.png" alt="" />
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="has-icon">
+                        <img src="images/icons/icon-temperature.svg" alt="" />
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="has-icon">
+                        <img src="images/icons/icon-leaves.svg" alt="" />
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="has-icon">
+                        <img src="images/icons/icon-time.svg" alt="" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="grey-border-bott only-headings">
+                    <td>
+                      <div class="notes-table-heading">
+                        <p></p>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="notes-table-heading">
+                        <p>Rich Water</p>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="notes-table-heading">
+                        <p>Temp</p>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="notes-table-heading">
+                        <p>Tea Leaves</p>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="notes-table-heading">
+                        <p>Time</p>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="grey-border-bott steep-values">
+                    <td>
+                      <div class="notes-table-heading">
+                        <p class="header-10">hot</p>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="notes-table-heading">
+                        <p>180 ml</p>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="notes-table-heading">
+                        <p style="font-weight:100;">90℃ -95℃</p>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="notes-table-heading">
+                        <p>1 tsp / 2.5 g</p>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="notes-table-heading">
+                        <p>5 mins</p>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="my-3">
+              <span id="no-steep-text">Recommended number of steeps - </span>
+              <span id="no-steep-val">1</span>
+            </p>
+            <h5 class="header-10 my-3">condiments</h5>
+            <div class="condiment-cnt">
+              <div class="fa fa-flask"></div>
+              <p>Drink Plain</p>
+            </div>
+            <div class="skew-div"></div>
+            <div class="condiment-cnt">
+              <div class="fa fa-cubes"></div>
+              <p>Sugar</p>
+            </div>
+            <div class="skew-div"></div>
+            <div class="condiment-cnt">
+              <div class="fa fa-glass"></div>
+              <p>Milk</p>
+            </div>
+            <div class="skew-div"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Benefits -->
+    <section class="container">
+      <h4>Benefits</h4>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. At excepturi
+        ad nesciunt laboriosam corporis asperiores, unde vel accusantium sequi
+        aspernatur obcaecati laudantium tempora magnam sapiente? Animi provident
+        consequuntur quibusdam ducimus eveniet, aspernatur quo a unde dolor
+        commodi cum rem placeat?
+      </p>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="container">
+      <h4>Reviews</h4>
+      <div class="reviews">
+        <div class="review">
+          <div class="review__user">
+            <div class="date">12/11/2019</div>
+            <div class="author">Shankar Mahadev</div>
+            <div class="reviews__rating">
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star-o"></span>
+            </div>
+          </div>
+          <div class="review__content">
+            <div class="heading">Badiya</div>
+            <div class="body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              error sequi consequatur, vitae obcaecati deserunt.
+            </div>
+          </div>
+        </div>
+        <div class="review">
+          <div class="review__user">
+            <div class="date">22/11/2019</div>
+            <div class="author">Taqabbur Rehman</div>
+            <div class="reviews__rating">
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+          <div class="review__content">
+            <div class="heading">Bawaal</div>
+            <div class="body">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex,
+              voluptatum!
+            </div>
+          </div>
+        </div>
+        <div class="review">
+          <div class="review__user">
+            <div class="date">22/10/2019</div>
+            <div class="author">Yasin Q.</div>
+            <div class="reviews__rating">
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+          <div class="review__content">
+            <div class="heading">Jhakaas</div>
+            <div class="body">
+              Lorem ipsum.
+            </div>
+          </div>
+        </div>
+        <div class="review">
+          <div class="review__user">
+            <div class="date">08/09/2019</div>
+            <div class="author">Zohaib Khan</div>
+            <div class="reviews__rating">
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star-o"></span>
+              <span class="fa fa-star-o"></span>
+            </div>
+          </div>
+          <div class="review__content">
+            <div class="heading">Garda</div>
+            <div class="body">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod rem
+              in eveniet incidunt, aspernatur quidem ratione vel quis
+              laboriosam? Optio perspiciatis adipisci fugit mollitia ab eos quis
+              ipsa illo cupiditate voluptatibus alias odio voluptates molestiae
+              sunt, veritatis consequuntur accusamus totam at rem debitis eius
+              animi dicta repellat neque. Deserunt sapiente quia nisi, rem
+              quidem voluptas, numquam perferendis nemo consequuntur natus
+              earum?
+              <br /><br />
+              Laboriosam doloremque repudiandae tempora iste fugiat voluptatum
+              tempore facilis porro? Quia sint maxime cumque, necessitatibus
+              eligendi fugiat! Dolorem, aperiam magni? Sunt a, iusto tenetur
+              libero minima, totam quibusdam molestias dolor recusandae iste
+              harum, optio ipsam perferendis asperiores fuga aliquam!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-3">
+            <img src="images/logo.png" alt="" />
+            <p>A part of Aventto Tea Company</p>
+          </div>
+          <div class="col-sm-12 col-md-3 mt-4">
+            <div class="h4 footer__header">Contact</div>
+            <ul>
+              <li>+91 7980472015</li>
+              <li>+91 98765 43210</li>
+            </ul>
+            <ul>
+              <li><a href="mailto:aventto@tea.com">aventto@tea.com</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-3 mt-4">
+            <div class="h4 footer__header">varieties</div>
+            <ul>
+              <li>
+                <a href="/collections/green-teas">Green Tea</a>
+              </li>
+              <li>
+                <a href="/collections/black-teas">Black Tea</a>
+              </li>
+              <li>
+                <a href="/collections/white-teas">White Tea</a>
+              </li>
+              <li>
+                <a href="/collections/oolong-teas">Oolong Tea</a>
+              </li>
+              <li>
+                <a href="/collections/gifts">Gifts &amp; Accessories</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-3 mt-4">
+            <div class="h4 footer__header">INFORMATION</div>
+            <ul>
+              <li>
+                <a href="/pages/terms-of-use">Terms of Use</a>
+              </li>
+
+              <li>
+                <a href="/pages/privacy-policy">Privacy Policy</a>
+              </li>
+
+              <li>
+                <a href="/pages/return-policy">Return Policy</a>
+              </li>
+
+              <li>
+                <a href="/pages/faqs">FAQs</a>
+              </li>
+
+              <li>
+                <a href="/pages/contact-us">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <div class="footer__payment-icons">
+              <img src="images/footer__mastercard.webp" alt="" />
+              <img src="images/footer__visa.webp" alt="" />
+              <img src="images/footer__amex.webp" alt="" />
+              <img src="images/footer__paytm.webp" alt="" />
+              <img src="images/footer__paypal.webp" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <a class="footer__social-icons" href="#" target="_blank"
+              ><i class="fa fa-facebook fa-2x" aria-hidden="true"></i
+            ></a>
+            <a class="footer__social-icons" href="#" target="_blank"
+              ><i class="fa fa-twitter fa-2x" aria-hidden="true"></i
+            ></a>
+            <a class="footer__social-icons" href="#" target="_blank"
+              ><i class="fa fa-instagram fa-2x" aria-hidden="true"></i
+            ></a>
+            <a class="footer__social-icons" href="#" target="_blank"
+              ><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i
+            ></a>
+            <a class="footer__social-icons" href="#" target="_blank"
+              ><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer__info">
+          <ul>
+            <li>&copy; 2019 Tea Brewing, All rights reserved.</li>
+            <li>
+              Powered by
+              <a class="link" href="https://simplysyntax.in"
+                >Simply Syntax Technologies</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!--  Javascript  -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.flipster.min.js"></script>
+    <script src="js/bootstrap-input-spinner.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/fotorama.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

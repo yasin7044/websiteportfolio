@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--  Bootstrap CSS  -->
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Design Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Slick -->
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+
+    <!--  Main CSS  -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/mdb-plugins-gathered.min.css"
+    />
+
+    <title>Suncraft Energy</title>
+  </head>
+  <body>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="Logo" style="height: 50px;" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Diagnosis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Billing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Carbon Abatement</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav nav-icons">
+          <li class="nav-item">
+            <a href="#" class="btn btn-outline-primary mr-3"><i class="fa fa-user mr-1"></i><b> zohaib</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-danger" href="#">
+              <span class="fa fa-power-off mr-1"></span> Log Out
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="container">
+      <main>
+        <!-- Client -->
+        <div class="input-group mb-3 primary">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon3">Client Name</span>
+          </div>
+          <input
+            type="text"
+            placeholder="Demo"
+            class="form-control"
+            id="basic-url"
+            aria-describedby="basic-addon3"
+          />
+        </div>
+
+        <!-- Location -->
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="plant-location"
+              >Plant Location</label
+            >
+          </div>
+          <select class="custom-select" id="plant-location">
+            <option value="1" selected>Kolkata</option>
+            <option value="2">Bangalore</option>
+            <option value="3">Hyderabad</option>
+          </select>
+        </div>
+
+        <!-- Meter -->
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="meter-id">Meter ID</label>
+          </div>
+          <select class="custom-select" id="meter-id">
+            <option value="1" selected>MD1A11</option>
+            <option value="2">MD1B11</option>
+            <option value="3">MD1C11</option>
+            <option value="4">MD1D11</option>
+          </select>
+        </div>
+
+        <!-- Client -->
+        <div class="input-group mb-3 primary">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon3"
+              >Solar Plant Capacity</span
+            >
+          </div>
+          <input
+            type="text"
+            placeholder="Plant capacity as per required"
+            class="form-control"
+            id="basic-url"
+            aria-describedby="basic-addon3"
+          />
+        </div>
+      </main>
+
+      <!-- Graph -->
+      <div class="graph col-md-8" style="height: 260px;">
+        <canvas id="barChart"></canvas>
+        <script
+          type="text/javascript"
+          src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/compiled-4.10.0.min.js"
+        ></script>
+        <div class="hiddendiv common"></div>
+        <script
+          type="text/javascript"
+          src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/plugins/mdb-plugins-gathered.min.js"
+        ></script>
+      </div>
+    </section>
+
+    <!--  Javascript  -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

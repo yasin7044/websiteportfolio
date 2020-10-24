@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--  Bootstrap CSS  -->
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Design Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/css/flag-icon.min.css"
+    />
+
+    <!--  Flipster  -->
+    <link rel="stylesheet" href="css/jquery.flipster.css" />
+
+    <!--  Main CSS  -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Single Product</title>
+  </head>
+  <body>
+    <!-- Notification Bar -->
+    <div class="top-bar">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <font style="vertical-align: inherit;"
+                ><font style="vertical-align: inherit;"
+                  >Free shipping on orders over &#8377;500
+                </font></font
+              >
+            </li>
+            <li class="list-inline-item">
+              <div class="dropdown">
+                <a
+                  id="langsDropdown"
+                  href="#"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  class="dropdown-toggle"
+                  ><span class="flag-icon flag-icon-in"></span>
+                  <font style="vertical-align: inherit;"
+                    ><font style="vertical-align: inherit;">IND</font></font
+                  ></a
+                >
+                <div
+                  aria-labelledby="langsDropdown"
+                  class="dropdown-menu"
+                  x-placement="bottom-start"
+                  style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(25px, 21px, 0px);"
+                >
+                  <a href="#" class="dropdown-item"
+                    ><span class="flag-icon flag-icon-us"></span>
+                    <font style="vertical-align: inherit;"
+                      ><font style="vertical-align: inherit;">USA</font></font
+                    ></a
+                  ><a href="#" class="dropdown-item">
+                    <span class="flag-icon flag-icon-gb"></span>
+                    <font style="vertical-align: inherit;">UK</font></a
+                  >
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo-small.png" alt="Logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#products">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#variety">Variety</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gifts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="career.html">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">B2B</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="offline-stores.html">Offline Store</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">Contact</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav nav-icons">
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">
+              <span data-notif="3" class="fa fa-shopping-cart"></span> Cart
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">
+              <span class="fa fa-user"></span> Log In
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="fa fa-power-off"></span> Log Out
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="container">
+      <h1 class="section-title">Login</h1>
+      <section>
+        <div class="grid">
+          <form class="form login">
+            <div class="form__field">
+              <label for="login__email"
+                ><i class="fa fa-user"></i
+                ><span class="hidden">Email</span></label
+              >
+              <input
+                id="login__email"
+                type="email"
+                name="email"
+                class="form__input"
+                placeholder="Email"
+                required
+              />
+            </div>
+
+            <div class="form__field">
+              <label for="login__password"
+                ><i class="fa fa-key"></i
+                ><span class="hidden">Password</span></label
+              >
+              <input
+                id="login__password"
+                type="password"
+                name="password"
+                class="form__input"
+                placeholder="Password"
+                required
+              />
+            </div>
+
+            <div class="form__field">
+              <input class="btn btn-green" type="submit" value="Sign In" />
+            </div>
+          </form>
+
+          <p class="text--center">
+            <a href="#">Forgot Password</a>
+          </p>
+          <p class="text--center">
+            Not a member? <a class="link" href="register.html">Sign up now</a>
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-3">
+            <img src="images/logo.png" alt="" />
+            <p>A part of Aventto Tea Company</p>
+          </div>
+          <div class="col-sm-12 col-md-3 mt-4">
+            <div class="h4 footer__header">Contact</div>
+            <ul>
+              <li>+91 7980472015</li>
+              <li>+91 98765 43210</li>
+            </ul>
+            <ul>
+              <li><a href="mailto:aventto@tea.com">aventto@tea.com</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-3 mt-4">
+            <div class="h4 footer__header">varieties</div>
+            <ul>
+              <li>
+                <a href="/collections/green-teas">Green Tea</a>
+              </li>
+              <li>
+                <a href="/collections/black-teas">Black Tea</a>
+              </li>
+              <li>
+                <a href="/collections/white-teas">White Tea</a>
+              </li>
+              <li>
+                <a href="/collections/oolong-teas">Oolong Tea</a>
+              </li>
+              <li>
+                <a href="/collections/gifts">Gifts &amp; Accessories</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-3 mt-4">
+            <div class="h4 footer__header">INFORMATION</div>
+            <ul>
+              <li>
+                <a href="/pages/terms-of-use">Terms of Use</a>
+              </li>
+
+              <li>
+                <a href="/pages/privacy-policy">Privacy Policy</a>
+              </li>
+
+              <li>
+                <a href="/pages/return-policy">Return Policy</a>
+              </li>
+
+              <li>
+                <a href="/pages/faqs">FAQs</a>
+              </li>
+
+              <li>
+                <a href="/pages/contact-us">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <div class="footer__payment-icons">
+              <img src="images/footer__mastercard.webp" alt="" />
+              <img src="images/footer__visa.webp" alt="" />
+              <img src="images/footer__amex.webp" alt="" />
+              <img src="images/footer__paytm.webp" alt="" />
+              <img src="images/footer__paypal.webp" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <a class="footer__social-icons" href="#" target="_blank"
+              ><i class="fa fa-facebook fa-2x" aria-hidden="true"></i
+            ></a>
+            <a class="footer__social-icons" href="#" target="_blank"
+              ><i class="fa fa-twitter fa-2x" aria-hidden="true"></i
+            ></a>
+            <a class="footer__social-icons" href="#" target="_blank"
+              ><i class="fa fa-instagram fa-2x" aria-hidden="true"></i
+            ></a>
+            <a class="footer__social-icons" href="#" target="_blank"
+              ><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i
+            ></a>
+            <a class="footer__social-icons" href="#" target="_blank"
+              ><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer__info">
+          <ul>
+            <li>&copy; 2019 Tea Brewing, All rights reserved.</li>
+            <li>
+              Powered by
+              <a class="link" href="https://simplysyntax.in"
+                >Simply Syntax Technologies</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!--  Javascript  -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.flipster.min.js"></script>
+    <script src="js/bootstrap-input-spinner.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/fotorama.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

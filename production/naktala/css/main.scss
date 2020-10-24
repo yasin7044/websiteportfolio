@@ -1,0 +1,384 @@
+/* CSS BoilerPlate by Zoayb */
+
+@font-face {
+  font-family: "My Durga Puja";
+  src: url("../fonts/vnhltfap_0-webfont.woff2") format("woff2");
+}
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap");
+
+$red: #ff0000;
+$black: #050505;
+$text: #3a3a3a;
+$yellow: #fff200;
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+  line-height: 30px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  color: $text;
+  background-color: #fff;
+  line-height: 1.6666667rem;
+  font-size: 1rem;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  color: $black;
+  margin: 2rem auto 1rem;
+}
+
+h1,
+.h1 {
+  font-family: "My Durga Puja", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2,
+.h2 {
+  font-size: 2rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.5rem;
+  // font-family: 'Manjari', sans-serif;
+  font-weight: 700;
+}
+
+.section-title {
+  text-align: center;
+}
+
+hr {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  display: block;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+small {
+  color: inherit;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+[class*="col-"] {
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 0.375rem 1.5rem;
+  line-height: 1.5;
+  border-radius: 1.5rem;
+
+  &.btn-white {
+    background: #fff;
+    color: $black;
+
+    &:hover {
+      background: $red;
+      color: #fff;
+    }
+  }
+
+  &.btn-red {
+    background: $red;
+    color: #fff;
+
+    &:hover {
+      background: #fff;
+      color: $black;
+    }
+  }
+}
+
+/////// ******** Navbar ******** \\\\\\\\
+
+.navbar {
+  // font-family: 'My Durga Puja', sans-serif;
+  background: $red !important;
+  padding: 20px;
+
+  & .nav-item {
+    margin-left: 2rem;
+  }
+}
+
+/////// ******** Hero ******** \\\\\\\\
+
+.hero {
+  width: 100%;
+  height: 60vh;
+  background: url(../images/hero.jpg) center no-repeat;
+  background-size: cover;
+}
+
+/////// ******** Section Theme ******** \\\\\\\\
+
+.brand-name {
+  font-family: inherit;
+}
+
+.theme-img {
+  width: 20vmin;
+}
+
+// * Members * \\
+
+.card {
+  height: 100%;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  border-radius: 0.45rem;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.members {
+  margin: 2rem 0;
+
+  & .img-square-wrapper {
+    width: 200px;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.advert {
+  // padding-bottom: 300px;
+  background: #c3b2b2;
+  color: #fff;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  width: 100%;
+}
+
+/////// ******** About ******** \\\\\\\\
+
+.red {
+  color: $red;
+}
+
+#about {
+  & .members {
+    & .img-square-wrapper {
+      width: 100%;
+    }
+  }
+}
+
+/////// ******** Events ******** \\\\\\\\
+
+#events {
+  background: $black;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: "";
+    background: url(../images/embel-1.png) center no-repeat;
+    background-size: 100%;
+    left: 0;
+    bottom: 0;
+    width: calc(312px / 2);
+    height: calc(325px / 2);
+  }
+}
+
+.date {
+  font-size: 0.65em;
+  background: $red;
+  color: white;
+  padding: 0.4em 0.8em;
+  border-radius: 0.4em;
+}
+
+/////// ******** Gallery ******** \\\\\\\\
+
+.gallery {
+  & img {
+    height: 100%;
+    max-height: 300px;
+    object-fit: cover;
+  }
+}
+
+/////// ******** Community ******** \\\\\\\\
+
+#community {
+  background: $yellow;
+}
+
+/////// ******** Awards ******** \\\\\\\\
+
+.award {
+  font-size: 12px;
+  text-align: center;
+  background: #eee;
+  box-shadow: none;
+
+  & .img-top {
+    padding: 1rem;
+
+    & img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+/////// ******** Locate ******** \\\\\\\\
+
+.map iframe {
+  width: 100%;
+  height: 80vh;
+}
+
+/////// ******** Contact Us ******** \\\\\\\\
+
+#contact-us {
+  background: $black;
+  position: relative;
+
+  .contact-info {
+    color: #fff;
+
+    & .has-fa-icon {
+      display: flex;
+
+      & .fa {
+        margin-right: 1em;
+      }
+    }
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    background: none;
+  }
+}
+
+/////// ******** Footer ******** \\\\\\\\
+
+footer {
+  padding-top: 2rem;
+
+  & .theme-img {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  & .social-icons {
+    display: flex;
+    justify-content: center;
+
+    & span {
+      margin: 1rem 0.5rem;
+    }
+  }
+
+  & .footer_info {
+    background: #e0dede;
+    text-align: center;
+    font-size: smaller;
+
+    & a {
+      color: inherit;
+
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+}
+
+/* Media Queries */
+
+/* Responsive font-size - works for all devices */
+
+@media (min-width: 375px) {
+  :root {
+    font-size: calc(18px + 6 * (100vw - 375px) / 1825);
+  }
+}
+
+@media (min-width: 768px) {
+  #about {
+    & .members {
+      & .card {
+        flex-direction: row;
+      }
+
+      & .img-square-wrapper {
+        width: 100%;
+      }
+    }
+  }
+
+  
+  #contact-us:after {
+    position: absolute;
+    content: "";
+    background: url(../images/embel-2.png) center no-repeat;
+    width: 270px;
+    height: 420px;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+/* Glad you're so inquisitive */
+
+/* Just some cool stuffs that I like */
+
+::selection {
+  background-color: $red;
+  color: #fff;
+}
